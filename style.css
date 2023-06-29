@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: #202025;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.control{
+    /* background-color: red; */
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.control > button{
+    background-color: #202025;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.hidden{
+    display: none;
+}
+
+.container .card{
+    background-color: #202025;
+    border: 1px solid #2e3134;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    overflow: hidden;
+    color: rgb(224, 224, 224);
+}
+.card-header{
+    text-align: center;  
+    padding: 1rem;
+    border-bottom: 2px solid #2e3134;
+}
+
+.card-body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.stopwatch-display > span{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin: 0.5rem;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #2e3134;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.timer-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.timer-display > input{
+    font-size: 2rem;
+    width: 5rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background-color: #202025;
+    border: 2px solid #2e3134;
+    outline: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

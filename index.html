@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="control">
+            <button  id="_stopwatch">Stopwatch</button>
+            <button  id="_timer">Timer</button>
+        </div>
+        <div class="card stopwatch" id="stopwatch" >
+            <div class="card-header">
+                <h1>Stopwatch</h1>
+            </div>
+            <div class="card-body">
+                <div class="stopwatch-display">
+                    <span id="seconds">00</span>:<span id="tens">00</span>
+                </div>
+                <div class="stopwatch-controls">
+                    <button class="btn" id="button-start">Start</button>
+                    <button  class="btn hidden " id="button-stop">Stop</button>
+                    <button  class="btn" id="button-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="card timer hidden" id="timer" >
+            <div class="card-header">
+                <h1>Timer</h1>
+            </div>
+            <div class="card-body">
+                <div class="timer-display">
+                    <input type="number" id="timer-minutes">:<input type="number" id="timer-seconds">
+                </div>
+                <div class="timer-controls">
+                    <button class="btn" id="timer-button-start">Start</button>
+                    <button  class="btn hidden" id="timer-button-stop">Stop</button>
+                    <button  class="btn" id="timer-button-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
